@@ -1,5 +1,4 @@
 import { gql } from '@apollo/client';
-​
 
 //get logged_in user
 export const QUERY_CURRENTUSER = gql`
@@ -28,7 +27,7 @@ query getCurrentUser {
 `;
 
 //get all buckets 
-​export const QUERY_BUCKETS = gql`
+export const QUERY_BUCKETS = gql`
 query getBuckets {
     buckets {
       id
@@ -64,4 +63,3 @@ query getSingleBucket ($bucketId: ID!) {
     }
   }
 `;
-​
