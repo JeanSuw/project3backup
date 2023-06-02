@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+//import { css } from '@emotion/css'
 
 //import { Link } from 'react-router-dom';
 //import Auth from '../utils/auth';
@@ -47,7 +48,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+function BasicTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -88,3 +89,5 @@ export default function BasicTabs() {
     </Box>
   );
 }
+
+export default BasicTabs;
